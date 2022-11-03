@@ -7,7 +7,7 @@ format:
 
 run:
 	make format
-	PYTHONPATH=. PYTHONDONTWRITEBYTECODE=1 pipenv run python bastion_central/main.py
+	PYTHONPATH=. PYTHONDONTWRITEBYTECODE=1 pipenv run python central/main.py
 
 build:
 	make format

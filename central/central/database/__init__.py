@@ -1,4 +1,4 @@
-from central.database.database import Database, ORMBase
+from central.database.database import Database
 
-# from bastion_central.adopter.database.model.client import ClientORM
-# from bastion_central.adopter.database.model.bastion import BastionORM
+# from central.adopter.database.model.client import ClientORM
+# from central.adopter.database.model.bastion import BastionORM

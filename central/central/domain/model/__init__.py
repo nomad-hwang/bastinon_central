@@ -1,2 +1,2 @@
-from bastion_central.model.bastion import Bastion
-from bastion_central.model.client import Client
+from central.domain.model.bastion import Bastion
+from central.domain.model.client import Client

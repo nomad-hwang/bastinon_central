@@ -4,7 +4,7 @@ from central.domain.dto.bastion import AddInDto, UpdateInDto
 from central.domain.model import Bastion
 from central.domain.repository import BastionRepo
 
-# from bastion_central.service.bastion_facade import BastionFacade
+# from central.service.bastion_facade import BastionFacade
 
 _GLOBAL_LOCK: dict[str, Lock] = {}
 

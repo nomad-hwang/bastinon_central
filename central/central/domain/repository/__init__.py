@@ -1,2 +1,2 @@
-from bastion_central.repository.bastion import BastionRepo
-from bastion_central.repository.client import ClientRepo
+from central.domain.repository.bastion import BastionRepo
+from central.domain.repository.client import ClientRepo

@@ -1,6 +1,6 @@
 import abc
 
-from bastion_central.model import Bastion, Client
+from central.domain.model import Bastion, Client
 
 
 class BastionRepo(abc.ABC):
