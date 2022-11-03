@@ -1,6 +1,3 @@
-
-
-	
 format:
 	pipenv run black .
 	pipenv run isort .
@@ -18,5 +15,3 @@ install:
 
 test:
 	pipenv run pytest
-
-
