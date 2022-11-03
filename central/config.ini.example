@@ -1,3 +1,5 @@
+[env]
+env = development
 
 [database]
 host = 127.0.0.1
@@ -5,11 +7,8 @@ port = 3306
 user = user
 password = 123456
 database = devices
-charset = utf8
+charset = utf8mb4
 db_url = mysql+pymysql://%(user)s:%(password)s@%(host)s:%(port)s/%(database)s?charset=%(charset)s
-
-drop_tables = True
-create_tables = True
 
 [ldap]
 host = ldap-server
@@ -23,4 +22,4 @@ search_timeout = 10
 search_size_limit = 0
 
 [credential]
-token_duration = 120 # seconds
+token_duration = 120
