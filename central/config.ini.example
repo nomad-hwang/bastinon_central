@@ -1,0 +1,9 @@
+
+[database]
+host = 127.0.0.1
+port = 3306
+user = user
+password = 123456
+database = devices
+charset = utf8
+db_url = mysql+pymysql://%(user)s:%(password)s@%(host)s:%(port)s/%(database)s?charset=%(charset)s
