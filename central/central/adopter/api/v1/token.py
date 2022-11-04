@@ -30,16 +30,7 @@ Note:   Token is used to provision a client.
 def get_token(
     token: TokenService = Depends(Provide[Container.access_token_service]),
     config: Configuration = Depends(Provide[Container.config]),
-    # cre: SecretGenerator = Depends(
 ):
     duration = config["credential"]["token_duration"] or 600  # default 10 minutes
     ret = token.generate(GenerateRequestDto(duration=duration))  # type: ignore
     return GenerateResponse(**ret.dict())
-
-
-""" 
-TODO:   Currently, token is generated inside the token.generate() method.
-TODO:   Maybe I should move it up here to make it more explicit and pluggable.
-        secret_gen = Provide[Container.secret_generator] <- something like this
-        secret_gen.generate_token() 
-"""
