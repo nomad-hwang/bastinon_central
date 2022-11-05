@@ -4,8 +4,8 @@ from fastapi import APIRouter, Depends, status
 
 from central.adopter.api.v1.model.token import GenerateResponse
 from central.container import Container
-from central.domain.token.token_dto_service import GenerateRequestDto
 from central.domain.token.token_service import TokenService
+from central.domain.token.token_service_dto import GenerateRequestDto
 
 router = APIRouter()
 

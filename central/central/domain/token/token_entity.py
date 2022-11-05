@@ -10,7 +10,7 @@ class Token(BaseModel):
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
 
-    def is_valid(self) -> bool:
+    def is_expired(self) -> bool:
         return self.expires_at < datetime.utcnow()
 
     @classmethod

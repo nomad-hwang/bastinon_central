@@ -1,9 +1,9 @@
 from sqlalchemy import Column, String
 
-from central.adopter.database.model.base import BaseWithDict
+from central.adopter.database.model.base import Base, BaseDictMixin
 
 
-class TokenORM(BaseWithDict):
+class TokenORM(Base, BaseDictMixin):
     __tablename__ = "access_token"
 
     token = Column(String(100), nullable=False, primary_key=True)

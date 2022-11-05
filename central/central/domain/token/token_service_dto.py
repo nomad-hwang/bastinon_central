@@ -3,7 +3,7 @@ from datetime import datetime
 from pydantic import BaseModel
 
 
-class ValidateRequestDto(BaseModel):
+class ValidateReqDto(BaseModel):
     token: str
 
 

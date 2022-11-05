@@ -1,10 +1,12 @@
 from pydantic import BaseModel
 
 
-class ClientRegisterRequest(BaseModel):
+class ClientRegisterReq(BaseModel):
     uid: str
     token: str
 
 
-class ClientRegisterResponse(BaseModel):
+class ClientRegisterResp(BaseModel):
+    uid: str
     password: str
+    message: str
