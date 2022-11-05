@@ -10,16 +10,5 @@ database = devices
 charset = utf8mb4
 db_url = mysql+pymysql://%(user)s:%(password)s@%(host)s:%(port)s/%(database)s?charset=%(charset)s
 
-[ldap]
-host = ldap-server
-port = 389
-user = cn=admin,dc=example,dc=com
-password = 123456
-base_dn = dc=example,dc=com
-search_filter = (objectClass=person)
-search_scope = 2
-search_timeout = 10
-search_size_limit = 0
-
 [credential]
 token_duration = 120

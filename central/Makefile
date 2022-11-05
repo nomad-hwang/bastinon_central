@@ -1,6 +1,7 @@
 format:
-	pipenv run black .
-	pipenv run isort .
+	pipenv run isort --profile black central
+	pipenv run black central
+	# pipenv run black --check --diff central
 
 run:
 	make format
